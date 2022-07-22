@@ -5,8 +5,20 @@
 
 
 .header--border-bottom {
-    border-bottom: 1px solid #ececec;}
+    
+    border-bottom: 1px solid #ececec;
+    }
+        .header__button{
+            display: inline-block;
+        } 
+.header__icon-mobile{
+    display: inline-block;
+    background-size: contain;
+            // padding: 12px 8px;
+        }
 
-.header--alignment{
-    display: flex;
-    align-items: center;}
+
+
+// .header--alignment{
+//     display: flex;
+//     align-items: center;}

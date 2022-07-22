@@ -1,5 +1,13 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  
     text-align: center;
+    
+    @media screen and (max-width: 767px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+         @media screen and (min-width: 768px) {
+             padding-top: 94px;
+             padding-bottom: 94px;
+         }
 }
