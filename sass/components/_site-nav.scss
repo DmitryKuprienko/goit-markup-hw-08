@@ -1,0 +1,89 @@
+/* nav site -навигатор сайта */
+
+.site-nav {
+  @include centerFlex();
+}
+
+.site-nav__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+
+
+.site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $main-text-color;
+    font-weight: 500;
+    &:hover,
+    &:focus,
+    &:active{
+    color: $acсent-color;
+    transition: color 250ms $timing-function;
+}
+}
+
+/* emphasis on navigation- підкреслення навігації */
+.site-nav__item {
+    position: relative;
+    & + &
+         {
+            margin-left: 50px;
+        }
+}
+
+.site-nav__emphasis:hover::after,
+.site-nav__emphasis:focus::after {
+    opacity: 1;
+}
+
+.site-nav__emphasis::after {
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background-color:$acсent-color;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 250ms $timing-function;
+}
+
+.site-nav__link.current,
+.site-nav__emphasis.current::after {
+    opacity: 1;
+    color: $acсent-color;
+}
+.menu-button
+{
+ display: inline-flex;
+ padding: 0;
+ margin: 0;
+ border: none;
+ background-color: transparent;
+background-size: cover;
+outline: 1px solid tomato;
+}
+.menu-button__icon{
+ 
+}
+
+.menu-button__nav  {
+    .menu-button.is-open & {
+            display: none;
+}}
+
+.menu-button_closs {
+    display: none;
+
+    .menu-button.is-open & {
+        display: block;
+    }
+}

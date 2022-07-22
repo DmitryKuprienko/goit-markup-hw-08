@@ -1,0 +1,114 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 448px;
+    text-align: left;
+    padding: 0;
+    &__group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+}
+
+.form__title {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color:$main-text-color;
+}
+
+.form__label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $main-text-grey;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.form__field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    &--margin {
+            margin-bottom: 20px;
+        }
+                 
+    
+}
+
+.form__input {
+    width: 100%;
+    min-height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 42px;
+    outline: none;
+
+    color: $main-text-grey;
+    transition: 250ms $timing-function;
+    &:focus-within{
+        border: 1px solid $acсent-color;
+        }
+   
+}
+
+
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: inline-block;
+    transition: fill 250ms $timing-function;
+    .form__field:focus-within & {
+            fill: $acсent-color;
+        }
+}
+
+
+.form__textarea {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: $main-text-grey;
+    padding: 12px 16px;
+
+    resize: none;
+    transition: border 250ms $timing-function;
+    outline: none;
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.01em;
+    }
+       
+    &:focus-within {
+            border: 1px solid $acсent-color;
+        }
+
+
+}
+
+.form__button {
+    @extend %button;
+    margin-right: auto;
+    margin-left: auto;
+    &:hover {
+            background-color: #188ce8;
+        }
+}
+

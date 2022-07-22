@@ -1,0 +1,39 @@
+/* our clients-наши кліенти */
+.clients__list {
+    display: flex;
+}
+
+.clients__item {
+    display: flex;
+    height: 92px;
+    width: 170px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.clients__link {
+    box-sizing: border-box;
+    padding: 16px 32px;
+
+    fill: $color-icon;
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+
+    transition: fill 250ms $timing-function,
+    border-color 250ms $timing-function;
+    &:hover, &:focus {
+            fill: $acсent-color;
+            border-color: $acсent-color;
+        }
+
+}
+
+.clients__icon {
+    min-width: 106px;
+    min-height: 60px;
+    border: none;
+}
+
+
+

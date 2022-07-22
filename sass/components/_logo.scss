@@ -1,0 +1,19 @@
+/*logo-site логоти сайта*/
+.logo {
+    color: $main-text-color;
+    font-family: $logo-text;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;}
+
+.logo--color {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: $logo-text;
+    color: $main-light;
+}
+
+.logo__color-web {
+    color: $acсent-color;
+}

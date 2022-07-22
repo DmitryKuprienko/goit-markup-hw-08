@@ -1,0 +1,42 @@
+.footer-form {
+    display: flex;
+    max-height: 86px;
+    height: 100%;
+}
+
+.footer-form__label {
+    display: block;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $main-light;
+}
+
+.footer-form__input {
+    display: block;
+    width: 358px;
+    height: 50px;
+
+    margin-top: 20px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $background-dark;
+    color: $main-light ;
+}
+
+.footer-form__btn {
+    @extend %button;
+    margin-left: 12px;
+    @include centerFlex;
+    align-self: flex-end;
+    justify-content: center;
+
+    
+}
+
+.footer-form__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}

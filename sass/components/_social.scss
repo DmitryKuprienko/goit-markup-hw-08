@@ -1,0 +1,54 @@
+/* соціальні мережі---social networks */
+.social__list {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.social__link {
+    display: block;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+
+    background-position: center;
+    border-radius: 50%;
+    color: $color-icon;
+    cursor: pointer;
+
+    transition: background-color 250ms $timing-function,
+        color 250ms $timing-function;
+        &:hover, &:focus {
+                background-color: $acсent-color;
+                color: $main-light;
+            }
+        &--background-footer {
+         background: rgba(255, 255, 255, 0.1);
+                        }
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+
+
+.social__item+.social__item {
+    margin-left: 10px;
+}
+.social__title {
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $main-light;
+}
+.social--margi-right {
+    margin-right: 93px;}
+
+.social__link--background-footer {
+    background: rgba(255, 255, 255, 0.1);
+    color: $main-light;
+}

@@ -1,0 +1,35 @@
+/* service features-особености услуги*/
+
+.benefits__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.benefits__list {
+    display: flex;
+}
+
+.benefits__item {
+    width: calc((100% - 90px) / 4);
+    text-align: start;
+    &:not(:last-child)
+     {margin-right: 30px;}
+    }
+.benefits__container-icon {
+   @include centerFlex();
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    background-color: $background-grey;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.benefits__text {
+    line-height: 1.71;
+    color: $main-text-grey;
+}

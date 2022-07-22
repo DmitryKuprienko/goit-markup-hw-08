@@ -1,0 +1,35 @@
+/* контакти */
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.contacts__item {
+    @include centerFlex ();
+    fill: $main-text-grey;
+}
+   .contacts__item + .contacts__item {
+       margin-left: 50px;
+   }
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $main-text-grey;
+    font-weight: 500;
+        &:hover,
+        &:focus {
+            color: $acсent-color;
+            transition: color 250ms $timing-function;
+        }
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+

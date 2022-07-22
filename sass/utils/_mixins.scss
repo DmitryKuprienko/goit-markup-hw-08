@@ -1,0 +1,5 @@
+@mixin centerFlex ( $aligning: center) {
+    display: flex;
+    align-items:$aligning;
+}
+       
