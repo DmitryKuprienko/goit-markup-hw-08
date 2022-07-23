@@ -20,15 +20,16 @@
   </head>
   <body class="page">
     <!--верхня линия-->
-    <header class="header header--background">
+    <header class="header  header--background">
       <!--навигатор сайта-->
       <div class="container header--alignment">
-        <a href="#" lang="en" class="link logo">
+       
+          <nav class="site-nav">
+             <a href="#" lang="en" class="link logo">
           <span class="logo__color-web">Web</span>Studio
         </a>
-        <div class="nav-container">
-          <nav class="site-nav">
-            <ul class="site-nav__list">
+          <div class="site-nav__container"> 
+             <ul class="site-nav__list">
               <li class="site-nav__item">
                 <a
                   href="index.html"
@@ -48,13 +49,12 @@
                   >Kонтакти</a
                 >
               </li>
-            </ul>
-          </nav>
-          <!--почта и телефон-->
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link mail">
-                <svg class="contacts__icon" width="16px" height="12px">
+                <!--почта и телефон-->
+              </ul>
+              <ul class="contacts">
+                   <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link mail">
+                     <svg class="contacts__icon" width="12px" height="16px">
                   <use href="./images/sprite.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
@@ -68,10 +68,20 @@
             </li>
           </ul>
         </div>
-        <button class="header__button" >
-          <svg class="header__icon-mobile" widht="24px" height="16px">
-            <use href="./images/sprite.svg#icon-nav""> </use>
+
+          <button type="button" class="site-nav__button is-open" data-menu-button >
+          <svg class="site-nav__icon-mobile"
+           widht="40px"
+           height="40px"
+           aria-label="Перемикач мобільного меню">
+            <use class="site-nav__menu" href="./images/sprite.svg#nav-menu"> </use>
+            <use class="site-nav__close" href="./images/sprite.svg#nav-close"></use>
           </svg>
+          </nav>
+          <!--почта и телефон-->
+         
+        </div>
+        
         </button>
       </div>
     </header>
@@ -190,15 +200,16 @@
             <li class="team__item">
               <img
                 class="team__images igor"
-                src="./images/igor.jpg"
+                
+                src="./images/igor450 .jpg"
                 alt="foto-igor"
               />
               <div class="team__container">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__specialization">Product Designer</p>
               </div>
-              <div class="social">
-                <ul class="social__list">
+              <div class="social ">
+                <ul class="social__list team__social">
                   <li class="social__item">
                     <a href="#" class="social__link">
                       <svg class="social__icon">
@@ -229,15 +240,15 @@
             <li class="team__item">
               <img
                 class="team__images"
-                src="./images/Olga.jpg"
+                src="./images/Olga450.jpg"
                 alt="foto-olga"
               />
               <div class="team__container">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__specialization">Frontend Developer</p>
               </div>
-              <div class="social">
-                <ul class="social__list">
+              <div class="social ">
+                <ul class="social__list team__social">
                   <li class="social__item">
                     <a href="#" class="social__link">
                       <svg class="social__icon">
@@ -268,15 +279,15 @@
             <li class="team__item">
               <img
                 class="team__images"
-                src="./images/Nikolay.jpg"
+                src="./images/Nikolay450 .jpg"
                 alt="foto-Nikolay"
               />
               <div class="team__container">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__specialization">Marketing</p>
               </div>
-              <div class="social">
-                <ul class="social__list">
+              <div class="sociall">
+                <ul class="social__list team__social">
                   <li class="social__item">
                     <a href="#" class="social__link">
                       <svg class="social__icon">
@@ -307,15 +318,15 @@
             <li class="team__item">
               <img
                 class="team__images"
-                src="./images/Michael.jpg"
+                src="./images/Michael450.jpg"
                 alt="foto-Michael"
               />
               <div class="team__container">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__specialization">UI Designer</p>
               </div>
-              <div class="social">
-                <ul class="social__list">
+              <div class="social ">
+                <ul class="social__list team__social">
                   <li class="social__item">
                     <a href="#" class="social__link">
                       <svg class="social__icon">
@@ -353,37 +364,37 @@
           <ul class="clients__list">
             <li class="clients__item">
               <a href="#" class="clients__link"
-                ><svg class="clients__icon" width="" height="">
+                ><svg class="clients__icon" >
                   <use href="./images/sprite.svg#client1"></use></svg
               ></a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link"
-                ><svg class="clients__icon" width="" height="">
+                ><svg class="clients__icon" >
                   <use href="./images/sprite.svg#client2"></use></svg
               ></a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link"
-                ><svg class="clients__icon" width="" height="">
+                ><svg class="clients__icon" >
                   <use href="./images/sprite.svg#client3"></use></svg
               ></a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link"
-                ><svg class="clients__icon" width="" height="">
+                ><svg class="clients__icon">
                   <use href="./images/sprite.svg#client4"></use></svg
               ></a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link">
-                <svg class="clients__icon" width="" height="">
+                <svg class="clients__icon" >
                   <use href="./images/sprite.svg#client5"></use></svg
               ></a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link">
-                <svg class="clients__icon" width="" height="">
+                <svg class="clients__icon" >
                   <use href="./images/sprite.svg#client6"></use></svg
               ></a>
             </li>
@@ -547,5 +558,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

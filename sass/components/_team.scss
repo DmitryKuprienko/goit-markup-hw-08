@@ -1,37 +1,43 @@
 /* Наша команда */
 .team--background {
-    background-color: $background-grey;
+  background-color: $background-grey;
 }
 
 .team__list {
-    display: flex;
+  // display: flex;
 }
 
 .team__item {
-    margin-right: 30px;
-    text-align: center;
-    background-color: $main-light;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+  //   margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: $main-light;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team__images {
-    width: 270px;
 }
 
 .team__container {
-    padding-top: 30px;
-    padding-bottom: 16px;
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.team__social {
+  margin-bottom: 24px;
 }
 
 .team__name {
-    margin-bottom: 10px;
-    color: $main-text-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+  margin-bottom: 10px;
+  color: $main-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .team__specialization {
-    color: $main-text-grey;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.19;
+  color: $main-text-grey;
 }
