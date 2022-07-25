@@ -7,14 +7,14 @@
 .clients__item {
   flex-basis: 50%;
   height: 92px;
-  width: 170px;
+  width: 210px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .clients__link {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   padding: 16px 52px;
 
@@ -31,8 +31,9 @@
 }
 
 .clients__icon {
+  display: block;
   background-size: contain;
-  display: inline-block;
+
   min-width: 106px;
   min-height: 60px;
   border: none;

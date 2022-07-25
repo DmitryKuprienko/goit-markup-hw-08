@@ -297,7 +297,7 @@ p {
   overflow: hidden;
 }
 
-.form__button, .hero__button {
+.form__button, .footer-form__btn, .hero__button {
   min-width: 200px;
   height: 50px;
   font-weight: 700;
@@ -326,11 +326,13 @@ img {
 
 .section {
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -776,14 +778,14 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   height: 92px;
-  width: 170px;
+  width: 210px;
 }
 .clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients__link {
-  display: inline-block;
+  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 16px 52px;
@@ -799,11 +801,81 @@ img {
 }
 
 .clients__icon {
+  display: block;
   background-size: contain;
-  display: inline-block;
   min-width: 106px;
   min-height: 60px;
   border: none;
+}
+
+/* footer site-подвал сайта */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer__blok {
+  margin-right: 70px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 86px;
+  height: 100%;
+}
+
+.footer-form__label {
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-form__input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: #ffffff;
+}
+
+.footer-form__btn {
+  margin-left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-form__icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 .modal {
