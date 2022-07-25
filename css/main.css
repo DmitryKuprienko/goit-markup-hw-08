@@ -766,22 +766,9 @@ img {
 }
 
 /* our clients-наши кліенти */
-.clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .clients__item {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   height: 92px;
-  width: 210px;
-}
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .clients__link {
@@ -803,8 +790,8 @@ img {
 .clients__icon {
   display: block;
   background-size: contain;
-  min-width: 106px;
-  min-height: 60px;
+  width: 106px;
+  height: 60px;
   border: none;
 }
 
@@ -822,16 +809,7 @@ img {
   margin-right: 70px;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-height: 86px;
   height: 100%;
 }

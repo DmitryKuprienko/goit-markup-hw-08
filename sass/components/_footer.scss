@@ -1,18 +1,14 @@
 /* footer site-подвал сайта */
 
 .footer {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $background-dark;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-dark;
 }
 .footer__blok {
-    margin-right: 70px;
+  margin-right: 70px;
 }
-.footer__container {
-    display: flex;
-}
-
-
-
-
+// .footer__container {
+//     display: flex;
+// }
