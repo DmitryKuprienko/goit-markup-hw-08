@@ -1,5 +1,20 @@
-@mixin centerFlex ( $aligning: center) {
-    display: flex;
-    align-items:$aligning;
+@mixin centerFlex($aligning: center) {
+  display: flex;
+  align-items: $aligning;
 }
-       
+
+@mixin for-phone-up {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin for-tablet-up {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

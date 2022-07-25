@@ -6,6 +6,7 @@
 
 .footer-form__label {
   display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -14,7 +15,8 @@
 
 .footer-form__input {
   display: block;
-  width: 358px;
+  width: 100%;
+  //   width: 358px;
   height: 50px;
 
   margin-top: 20px;
@@ -28,10 +30,10 @@
 
 .footer-form__btn {
   @extend %button;
-  margin-left: 12px;
-  @include centerFlex;
-  align-self: flex-end;
-  justify-content: center;
+  //   margin-left: 12px;
+  //   @include centerFlex;
+  //   align-self: flex-end;
+  //   justify-content: center;
 }
 
 .footer-form__icon {
