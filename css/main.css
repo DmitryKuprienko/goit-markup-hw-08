@@ -555,19 +555,13 @@ img {
   display: none;
 }
 
-.menu-phone {
-  display: none;
-  position: absolute;
+.mobile-menu {
+  position: fixed;
+  top: 0;
   left: 0;
-  top: 10%;
   width: 100%;
-  background-color: rgba(247, 146, 24, 0.5);
-  padding: 20px;
-  height: 400px;
-  font-size: 20px;
-}
-.menu-phone.is-open {
-  display: block;
+  height: 100%;
+  background-color: var(--color-background-primary);
 }
 
 .hero {

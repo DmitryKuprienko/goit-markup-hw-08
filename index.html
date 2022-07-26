@@ -67,13 +67,25 @@
               </li>
             </ul>
           </div>
-
+        </nav>
+        <button class="header__open-menu" data-mobile-menu-open>
+          <svg
+            class="site-nav__icon-mobile"
+            width="40px"
+            height="40px"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="site-nav__close"
+              href="./images/sprite.svg#nav-menu"
+            ></use>
+          </svg>
+        </button>
+        <nav class="header__mobile-menu mobile-menu is-hidden" data-mobile-menu>
           <button
+            class="header__close-menu"
             type="button"
-            class="site-nav__button is-open"
-            aria-expanded="false"
-            aria-controls="menu-phone"
-            data-menu-button
+            data-mobile-menu-close
           >
             <svg
               class="site-nav__icon-mobile"
@@ -85,14 +97,8 @@
                 class="site-nav__menu"
                 href="./images/sprite.svg#nav-close"
               ></use>
-              <use
-                class="site-nav__close"
-                href="./images/sprite.svg#nav-menu"
-              ></use>
             </svg>
           </button>
-
-          <div class="menu-phone" id="menu-phone" data-menu></div>
         </nav>
       </div>
     </header>
@@ -566,5 +572,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
