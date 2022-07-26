@@ -1,0 +1,14 @@
+.menu-phone {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: bisque;
+  padding: 20px;
+  height: 400px;
+  font-size: 20px;
+  &.is-open {
+    display: block;
+  }
+}
