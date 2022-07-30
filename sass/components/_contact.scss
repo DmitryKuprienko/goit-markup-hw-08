@@ -1,35 +1,45 @@
 /* контакти */
-.contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
+// .contacts {
+//   //   display: flex;
+//   //   margin-left: auto;
+//   //   align-items: center;
+// }
 .contacts__item {
-    @include centerFlex ();
-    fill: $main-text-grey;
-}
-   .contacts__item + .contacts__item {
-       margin-left: 50px;
-   }
+  @include centerFlex();
+  fill: $main-text-grey;
 
+  & + & {
+    margin-top: 32px;
+    // margin-left: 50px;
+  }
+}
 .contacts__link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $main-text-grey;
-    font-weight: 500;
-        &:hover,
-        &:focus {
-            color: $acсent-color;
-            transition: color 250ms $timing-function;
-        }
+  display: flex;
+  align-items: center;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  color: $main-text-grey;
+  font-weight: 500;
+  font-size: 34px;
+
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+
+  &--font-size {
+    font-size: 24px;
+  }
+  &--font-color {
+    color: $acсent-color;
+    line-height: 1.176;
+  }
+  &:hover,
+  &:focus {
+    color: $acсent-color;
+    transition: color 250ms $timing-function;
+  }
 }
 
 .contacts__icon {
-    margin-right: 10px;
-    fill: currentColor;
+  margin-right: 10px;
+  fill: currentColor;
 }
-
-
-

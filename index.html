@@ -23,10 +23,10 @@
     <header class="header header--background">
       <!--навигатор сайта-->
       <div class="container header--alignment">
+        <a href="#" lang="en" class="link logo">
+          <span class="logo__color-web">Web</span>Studio
+        </a>
         <nav class="site-nav">
-          <a href="#" lang="en" class="link logo">
-            <span class="logo__color-web">Web</span>Studio
-          </a>
           <div class="site-nav__container">
             <ul class="site-nav__list">
               <li class="site-nav__item">
@@ -68,15 +68,15 @@
             </ul>
           </div>
         </nav>
-        <button class="header__open-menu" data-mobile-menu-open>
+
+        <button type="button" class="header__open-menu" data-mobile-menu-open>
           <svg
-            class="site-nav__icon-mobile"
             width="40px"
             height="40px"
             aria-label="Перемикач мобільного меню"
           >
             <use
-              class="site-nav__close"
+              class="header__icon-menu"
               href="./images/sprite.svg#nav-menu"
             ></use>
           </svg>
@@ -88,17 +88,62 @@
             data-mobile-menu-close
           >
             <svg
-              class="site-nav__icon-mobile"
               width="40px"
               height="40px"
               aria-label="Перемикач мобільного меню"
             >
               <use
-                class="site-nav__menu"
+                class="header__icon-close"
                 href="./images/sprite.svg#nav-close"
               ></use>
             </svg>
           </button>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="index.html" class="mobile-menu__link current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Kонтакти</a>
+            </li>
+            <!--почта и телефон-->
+          </ul>
+          <div>
+            <ul class="contacts mobile-menu__contacts">
+              <li class="contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="contacts__link contacts__link--font-color tel"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts__link contacts__link--font-size mail"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -117,9 +162,7 @@
       <!--Преваги-benefits-->
       <section class="section benefits">
         <div class="container">
-          <h2 class="benefits__title--none visually-hidden">
-            наші особливості
-          </h2>
+          <h2 class="benefits__title--none is-hidden">наші особливості</h2>
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__container-icon">
@@ -556,7 +599,7 @@
             <label class="checkbox checkbox--retreat">
               <input
                 type="checkbox"
-                class="checkbox__input visually-hidden"
+                class="checkbox__input -hidden"
                 name="checkbox"
               />
               <span class="checkbox__icon"></span>
