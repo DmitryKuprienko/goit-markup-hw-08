@@ -1,4 +1,4 @@
-/* our clients-наши кліенти */
+
 .clients__list {
   @include for-phone-up {
     display: flex;
