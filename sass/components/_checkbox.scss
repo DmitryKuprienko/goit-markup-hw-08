@@ -4,13 +4,18 @@
   justify-content: center;
 
   font-weight: 400;
-  // font-size: 14px;
+
   font-size: 12px;
-  //   line-height: 1.71;
+
   line-height: 1.166;
   letter-spacing: 0.03em;
 
   color: $main-text-grey;
+
+  @include for-desktop-up {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   //   &--retreat {
   //     margin-bottom: 30px;

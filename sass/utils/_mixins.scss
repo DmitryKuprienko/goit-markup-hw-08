@@ -18,3 +18,13 @@
     @content;
   }
 }
+@mixin for-tablet-dn {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin for-desktop-dn {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}

@@ -5,18 +5,25 @@
   justify-content: space-between;
 
   &__container {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-      display: block;
+    @include for-tablet-dn {
+      display: none;
     }
+  }
+}
+.site-nav__container {
+  @include for-tablet-up {
+    display: flex;
+    align-items: center;
   }
 }
 .site-nav__list {
   display: flex;
 
   @include for-tablet-up {
-    margin-left: 93px;
+    margin-right: 90px;
+  }
+  @include for-desktop-up {
+    margin-right: 315px;
   }
 }
 

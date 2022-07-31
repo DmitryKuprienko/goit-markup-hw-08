@@ -23,6 +23,9 @@
   @include for-phone-up {
     width: 450px;
   }
+  @include for-desktop-up {
+    width: 528px;
+  }
 
   @include for-tablet-up {
     position: absolute;

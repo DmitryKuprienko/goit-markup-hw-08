@@ -2,12 +2,6 @@
   position: relative;
   text-align: center;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
   &--background {
     background-color: $main-light;
   }
@@ -16,13 +10,12 @@
     border-bottom: 1px solid #ececec;
   }
   &__mobile-menu {
-    padding: 48px 40px;
-
+    padding: 12px 10px;
     margin-left: auto;
     margin-right: auto;
 
-    @include for-tablet-up {
-      display: none;
+    @include for-phone-up {
+      padding: 48px 40px;
     }
   }
   &__close-menu {

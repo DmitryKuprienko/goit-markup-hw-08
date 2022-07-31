@@ -1,6 +1,10 @@
 /* services-чем занимаемся */
 .services {
   display: none;
+
+  @include for-desktop-up {
+    display: block;
+  }
 }
 
 .services--not-padding {
