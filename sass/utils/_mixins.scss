@@ -18,6 +18,11 @@
     @content;
   }
 }
+@mixin for-phone-dn {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
 @mixin for-tablet-dn {
   @media screen and (max-width: 767px) {
     @content;
