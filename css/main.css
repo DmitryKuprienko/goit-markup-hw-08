@@ -330,7 +330,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -361,13 +361,16 @@ img {
 }
 
 .container__titele {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
+  line-height: 1.178;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container__titele {
     font-size: 36px;
+    line-height: 1.166;
+    margin-bottom: 50px;
   }
 }
 
@@ -439,7 +442,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.192;
 }
 @media screen and (min-width: 480px) {
   .logo {
@@ -520,6 +523,12 @@ img {
   .contacts__link {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.142;
   }
 }
 .contacts__link:hover, .contacts__link:focus {
@@ -702,8 +711,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-480px.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480px.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/Header imghero450.jpg 1x");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/Header imghero450.jpg 1x");
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
@@ -1628,7 +1637,17 @@ img {
 
 /* filter buttons-кнопки фільтра */
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__list {
