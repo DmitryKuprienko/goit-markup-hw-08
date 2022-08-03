@@ -202,19 +202,40 @@
           </li>
           <li class="portfolio__item">
             <div class="portfolio__thumb">
-              <img
-                class="section-imeg"
-                src="./images/portfolio/2basketball450.jpg"
-                srcset="
-                  ./images/portfolio/2basketball450.jpg 1x,
-                  ./images/portfolio/2basketball900.jpg 2x,
-                  ./images/portfolio/2basketball354.jpg 1x,
-                  ./images/portfolio/2basketball708.jpg 2x,
-                  ./images/portfolio/2basketball370.jpg 1x,
-                  ./images/portfolio/2basketball740.jpg 2x
-                "
-                alt="two basketball players"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/2basketball450.jpg 1x,
+                    ./images/portfolio/2basketball900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/img2basketball354.jpg 1x,
+                    ./images/portfolio/img2basketball708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/img2basketball370.jpg 1x,
+                    ./images/portfolio/img2basketball740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/portfolio/2basketball450.jpg"
+                  alt="two basketball players"
+                />
+              </picture>
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
