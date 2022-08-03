@@ -35,7 +35,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/hero768.jpg);
+        url(../../images/hero/imghero768.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -49,7 +49,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(../images/hero768@2x.jpg);
+          url(../../images/hero/imghero1536.jpg);
       }
     }
   }
@@ -60,7 +60,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/hero.jpg);
+        url(../../images/hero/imghero1600.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -73,7 +73,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(../images/hero@2x.jpg);
+          url(../../images/hero/imghero3200.jpg);
       }
     }
   }

@@ -230,31 +230,59 @@
           <h2 class="container__titele">Чим ми займаємося</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img
-                class="services__imeges"
-                src="./images/code-writing.jpg"
-                alt="розробка програмного забезпечення"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/imgcode-writing370.jpg 1x,
+                    ./images/services/imgcode-writing740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/services/imgcode-writing370.jpg"
+                  alt="розробка програмного забезпечення"
+                />
+              </picture>
               <div class="services__label">
                 <p class="services__name">Десктопні додатки</p>
               </div>
             </li>
             <li class="services__item">
-              <img
-                class="services__imeges"
-                src="./images/create-front-end.jpg"
-                alt="тестування мобільного додатку"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/imgcreate-front-end370.jpg 1x,
+                    ./images/services/imgcreate-front-end740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <img
+                  class="services__imeges"
+                  src="./images/services/imgcreate-front-end370.jpg"
+                  alt="тестування мобільного додатку"
+              /></picture>
               <div class="services__label">
                 <p class="services__name">Мобільні додатки</p>
               </div>
             </li>
             <li class="services__item">
-              <img
-                class="services__imeges"
-                src="./images/tablet.jpg"
-                alt="налаштування палітри кольорів"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/imgtablet370.jpg 1x,
+                    ./images/services/imgtablet740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <img
+                  class="services__imeges"
+                  src="./images/services/imgtablet370.jpg"
+                  alt="налаштування палітри кольорів"
+              /></picture>
               <div class="services__label">
                 <p class="services__name">Дизайнерські рішення</p>
               </div>
@@ -268,11 +296,37 @@
           <h2 class="container__titele">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__images igor"
-                src="./images/igor450.jpg"
-                alt="foto-igor"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/igor450.jpg 1x,
+                    ./images/team/igor900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgigor354.jpg 1x,
+                    ./images/team/imgigor708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgigor270.jpg 1x,
+                    ./images/team/imgigor540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg"
+                />
+                <img src="./images/team/igor450.jpg" alt="foto-igor" />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__specialization">Product Designer</p>
@@ -307,11 +361,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__images"
-                src="./images/Olga450.jpg"
-                alt="foto-olga"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/imgOlga450.jpg 1x,
+                    ./images/team/imgOlga900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <source
+                  srcset="
+                    ./images/team/imgOlga354.jpg 1x,
+                    ./images/team/imgOlga708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <source
+                  srcset="
+                    ./images/team/imgOlga270.jpg 1x,
+                    ./images/team/imgOlga540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <img
+                  class="team__images"
+                  src="./images/team/imgOlga450.jpg"
+                  alt="foto-olga"
+              /></picture>
               <div class="team__container">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__specialization">Frontend Developer</p>
@@ -346,11 +425,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__images"
-                src="./images/Nikolay.jpg"
-                alt="foto-Nikolay"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/imgNikolay450.jpg 1x,
+                    ./images/team/imgNikolay900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <source
+                  srcset="
+                    ./images/team/imgNikolay354.jpg 1x,
+                    ./images/team/imgNikolay708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <source
+                  srcset="
+                    ./images/team/imgNikolay270.jpg 1x,
+                    ./images/team/imgNikolay540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <img
+                  class="team__images"
+                  src="./images/team/imgNikolay450.jpg"
+                  alt="foto-Nikolay"
+              /></picture>
               <div class="team__container">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__specialization">Marketing</p>
@@ -385,11 +489,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__images"
-                src="./images/Michael450.jpg"
-                alt="foto-Michael"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Michael450.jpg 1x,
+                    ./images/team/Michael900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <source
+                  srcset="
+                    ./images/team/Michael354.jpg 1x,
+                    ./images/team/Michael708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <source
+                  srcset="
+                    ./images/team/Michael270.jpg 1x,
+                    ./images/team/Michael540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type="image/jpeg" />
+                <img
+                  class="team__images"
+                  src="./images/team/Michael450.jpg"
+                  alt="foto-Michael"
+              /></picture>
               <div class="team__container">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__specialization">UI Designer</p>
@@ -625,7 +754,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    
+
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

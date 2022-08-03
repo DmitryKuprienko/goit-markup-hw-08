@@ -29,18 +29,14 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  & + & {
-    @include for-phone-dn {
-      margin-top: 15px;
-      @include for-tablet-dn {
-        margin-top: 30px;
-      }
-    }
+  @include for-tablet-dn {
+    margin-top: 30px;
   }
   @include for-phone-up {
     max-width: 450px;
   }
   @include for-tablet-up {
+    margin-top: 0;
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
